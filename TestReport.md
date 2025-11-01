@@ -75,6 +75,23 @@ STATUS: ✅ ALL TESTS PASSED SUCCESSFULLY
 
 ---
 
+## 🧾 Test Summary
+
+> ℹ️ **Test Execution Results**  
+> All tests were executed using **JUnit 5**.  
+> Below is a summary of the test outcomes:
+
+| 🧩 **Test Class** | 🧪 **Test Case** | ✅ **Result** |
+|-------------------|------------------|----------------|
+| **BillingServiceTest** | `testTotalCalculation()` | ✅ Passed |
+| **DBConnectionTest** | `testDatabaseConnection()` | ✅ Passed |
+| **AuthServiceTest** | `testLoginWithValidUser()` | ✅ Passed |
+| **AuthServiceTest** | `testLoginWithInvalidUser()` | ✅ Passed |
+
+> ✅ **Overall Result:** All test cases passed successfully — **100% success rate** 🎯
+
+
+
 ## 🧩 Observations
 - Database schema loaded successfully with all required tables.  
 - Role-based registration and login worked correctly.  
@@ -99,3 +116,10 @@ All test cases executed successfully, confirming that:
 👨‍💻 **Nagaprasad Salian**  
 📘 AI Kata Project — *Sweet Shop Management System*  
 📅 *31 October 2025*
+
+### 🧰 Test Execution Command
+```bash
+java -jar lib\junit-platform-console-standalone-1.10.2.jar ^
+--class-path "out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" ^
+--scan-class-path
+
