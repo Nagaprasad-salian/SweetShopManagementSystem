@@ -71,7 +71,7 @@ Ensure you have:
 - **Git** (optional, for version control)
 
 Check installations:
-```bash
+-bash
 java --version
 sqlite3 --version
 ## 🖼️ 7. Screenshots
@@ -155,6 +155,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 — Run the Application
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
