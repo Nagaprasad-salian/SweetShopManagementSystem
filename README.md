@@ -127,6 +127,13 @@ I confirm that this project is my own work. AI tools were used responsibly to as
 
 All test cases were executed successfully using **JUnit 5** (`junit-platform-console-standalone-1.10.2.jar`).
 
+🧾 Test Summary
+Test Class	Test Case	Result
+BillingServiceTest	testTotalCalculation()	✅ Passed
+DBConnectionTest	testDatabaseConnection()	✅ Passed
+AuthServiceTest	testLoginWithValidUser()	✅ Passed
+AuthServiceTest	testLoginWithInvalidUser()	✅ Passed
+
 ### 🧰 Test Execution Command
 ```bash
 java -jar lib\junit-platform-console-standalone-1.10.2.jar ^
@@ -174,6 +181,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
