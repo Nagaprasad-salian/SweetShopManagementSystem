@@ -120,6 +120,19 @@ However:
 
 **Declaration:**  
 I confirm that this project is my own work. AI tools were used responsibly to assist in learning, debugging, and documentation, without compromising originality or understanding.
+
+---
+
+## 🧪 9. Test Report
+
+All test cases were executed successfully using **JUnit 5** (`junit-platform-console-standalone-1.10.2.jar`).
+
+### 🧰 Test Execution Command
+```bash
+java -jar lib\junit-platform-console-standalone-1.10.2.jar ^
+--class-path "out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" ^
+--scan-class-path
+
 Check installations:
 ```bash
 java --version
@@ -161,6 +174,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
