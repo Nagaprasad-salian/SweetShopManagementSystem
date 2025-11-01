@@ -155,24 +155,52 @@ sqlite3 --version
 
 ...
 
-## — Directory Structure
+---
+
+## 📂 Project Directory Structure
+
+```plaintext
 SweetShopManagementSystem/
 │
 ├── lib/
 │   ├── sqlite-jdbc-3.50.3.0.jar
-│   └── itextpdf-5.5.13.3.jar
+│   ├── itextpdf-5.5.13.3.jar
+│   └── junit-platform-console-standalone-1.10.2.jar
 │
 ├── src/
-│   └── main/java/com/sweetshop/
-│       ├── model/
-│       ├── dao/
-│       ├── service/
-│       ├── ui/
-│       └── util/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/sweetshop/
+│   │   │       ├── model/
+│   │   │       ├── dao/
+│   │   │       ├── service/
+│   │   │       ├── ui/
+│   │   │       └── util/
+│   │   └── resources/
+│   │       └── db/
+│   │           └── sweetshop.db
+│   │
+│   └── test/
+│       └── java/
+│           └── com/sweetshop/
+│               ├── AuthServiceTest.java
+│               ├── BillingServiceTest.java
+│               └── DBConnectionTest.java
 │
-├── src/main/resources/db/sweetshop.db
-├── out/
-└── README.md
+├── out/                        # Compiled .class files
+├── screenshots/                # Application screenshots for README
+│   ├── loginPage.png
+│   ├── Dashboard.png
+│   ├── Inventory.png
+│   ├── Inventory Item Addition.png
+│   ├── CustomerReport.png
+│   ├── Billing Report.png
+│   ├── Billing Report sale Completion.png
+│   ├── Invoice Generation.png
+│   └── Sales Report.png
+│
+├── README.md
+
 
 
 ###— Compile the Project:
@@ -189,6 +217,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
