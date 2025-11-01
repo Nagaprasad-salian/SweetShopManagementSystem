@@ -71,7 +71,7 @@ Ensure you have:
 - **Git** (optional, for version control)
 
 
-## 🖼️ 7. Screenshots
+## 🖼️ 6. Screenshots
 
 ### 🧁 Login Page  
 ![Login Page](screenshots/loginPage.png)
@@ -95,12 +95,12 @@ Ensure you have:
 ![Sales Report](screenshots/Sales%20Report.png)
 
 
-Step 2 — Clone the Repository
+ ## 7. Clone the Repository
 git clone https://github.com/<your-username>/SweetShopManagementSystem.git
 cd SweetShopManagementSystem
 
 
-## 🤖 My AI Usage
+## 🤖 8. My AI Usage
 
 This project was developed with the assistance of **ChatGPT (OpenAI’s GPT-5)** to enhance efficiency and understanding during the development process.
 
@@ -161,6 +161,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
