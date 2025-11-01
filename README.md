@@ -95,7 +95,7 @@ Ensure you have:
 ![Sales Report](screenshots/Sales%20Report.png)
 
 
- ## 7. Clone the Repository
+## 7. Clone the Repository
 git clone https://github.com/<your-username>/SweetShopManagementSystem.git
 cd SweetShopManagementSystem
 
@@ -161,6 +161,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
