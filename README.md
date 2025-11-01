@@ -70,10 +70,7 @@ Ensure you have:
 - **SQLite** command-line or DB browser
 - **Git** (optional, for version control)
 
-Check installations:
--bash
-java --version
-sqlite3 --version
+
 ## 🖼️ 7. Screenshots
 
 ### 🧁 Login Page  
@@ -123,6 +120,12 @@ However:
 
 **Declaration:**  
 I confirm that this project is my own work. AI tools were used responsibly to assist in learning, debugging, and documentation, without compromising originality or understanding.
+Check installations:
+```bash
+java --version
+sqlite3 --version
+## 🖼️ 7. Screenshots
+...
 
 ## — Directory Structure
 SweetShopManagementSystem/
@@ -144,7 +147,8 @@ SweetShopManagementSystem/
 └── README.md
 
 
-###— Compile the Project
+###— Compile the Project:
+
 javac -cp ".;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" ^
 -d out src\main\java\com\sweetshop\util\*.java ^
 src\main\java\com\sweetshop\model\*.java ^
@@ -153,8 +157,11 @@ src\main\java\com\sweetshop\service\*.java ^
 src\main\java\com\sweetshop\ui\*.java
 
 
-— Run the Application
+###— Run the Application: 
+
+
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
