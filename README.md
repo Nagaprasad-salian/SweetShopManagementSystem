@@ -198,21 +198,82 @@ sqlite3 --version
 ## — Directory Structure
 SweetShopManagementSystem/
 │
-├── lib/
-│   ├── sqlite-jdbc-3.50.3.0.jar
-│   └── itextpdf-5.5.13.3.jar
+├── 📂 lib/ # External libraries (JARs)
+│ ├── sqlite-jdbc-3.50.3.0.jar
+│ ├── itextpdf-5.5.13.3.jar
+│ └── junit-platform-console-standalone-1.10.2.jar
 │
-├── src/
-│   └── main/java/com/sweetshop/
-│       ├── model/
-│       ├── dao/
-│       ├── service/
-│       ├── ui/
-│       └── util/
+├── 📂 src/
+│ ├── 📂 main/java/com/sweetshop/
+│ │ ├── 📂 model/ # Data models
+│ │ │ ├── User.java
+│ │ │ ├── Customer.java
+│ │ │ ├── SweetItem.java
+│ │ │ ├── Sale.java
+│ │ │ └── SaleItem.java
+│ │ │
+│ │ ├── 📂 dao/ # Database Access Objects (DAO)
+│ │ │ ├── UserDAO.java
+│ │ │ ├── CustomerDAO.java
+│ │ │ ├── SweetItemDAO.java
+│ │ │ ├── SalesDAO.java
+│ │ │ └── ReportDAO.java
+│ │ │
+│ │ ├── 📂 service/ # Business logic layer
+│ │ │ ├── AuthService.java
+│ │ │ ├── InventoryService.java
+│ │ │ ├── BillingService.java
+│ │ │ ├── CustomerService.java
+│ │ │ └── ReportService.java
+│ │ │
+│ │ ├── 📂 ui/ # Swing UI components
+│ │ │ ├── LoginFrame.java
+│ │ │ ├── RegistrationFrame.java
+│ │ │ ├── DashboardFrame.java
+│ │ │ ├── InventoryFrame.java
+│ │ │ ├── BillingFrame.java
+│ │ │ ├── ReportFrame.java
+│ │ │ └── CustomerFrame.java
+│ │ │
+│ │ └── 📂 util/ # Utility classes
+│ │ ├── DBConnection.java
+│ │ └── PDFGenerator.java
+│ │
+│ ├── 📂 main/resources/
+│ │ └── db/
+│ │ └── sweetshop.db # SQLite database file
+│ │
+│ └── 📂 test/java/com/sweetshop/ # Unit and TDD test cases
+│ ├── BillingServiceTest.java
+│ ├── AuthServiceTest.java
+│ ├── DBConnectionTest.java
+│ ├── BillingServiceTDDTest.java
+│ │
+│ ├── 📂 mockdao/ # Mock DAO classes for TDD
+│ │ ├── MockSalesDAO.java
+│ │ └── MockSweetItemDAO.java
+│ │
+│ └── 📂 mockmodel/ # Mock model classes (if any)
+│ └── (optional test models)
 │
-├── src/main/resources/db/sweetshop.db
-├── out/
-└── README.md
+├── 📂 screenshots/ # UI screenshots for documentation
+│ ├── loginPage.png
+│ ├── Registration Page.png
+│ ├── Dashboard.png
+│ ├── Inventory.png
+│ ├── Inventory Item Addition.png
+│ ├── CustomerReport.png
+│ ├── Billing.png
+│ ├── BillingReport.png
+│ ├── Billing Report sale Completion.png
+│ ├── Invoice Generation.png
+│ └── Sales Report.png
+│
+├── 📂 out/ # Compiled .class output files
+│
+├── README.md # Project documentation
+├── TESTREPORT.md # JUnit & TDD test results summary
+
 
 
 ###— Compile the Project:
@@ -229,6 +290,7 @@ src\main\java\com\sweetshop\ui\*.java
 
 
 java -cp ".;out;lib\sqlite-jdbc-3.50.3.0.jar;lib\itextpdf-5.5.13.3.jar" com.sweetshop.ui.LoginFrame
+
 
 
 
